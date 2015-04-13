@@ -9,6 +9,17 @@ class PinchOutView: UIView {
         super.layoutSubviews()
         createLayersIfNeeded()
     }
+    
+    ///
+    func moveUpperCircle() {
+        
+    }
+    
+    /// 
+    func moveLowerCircle() {
+        
+    }
+    
     private func createLayersIfNeeded() {
         if starShape == nil {
             var starFrame = self.bounds

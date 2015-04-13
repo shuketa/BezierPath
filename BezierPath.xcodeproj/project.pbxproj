@@ -13,9 +13,10 @@
 		A257EF641AD9BED8009566D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A257EF631AD9BED8009566D3 /* Images.xcassets */; };
 		A257EF671AD9BED8009566D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A257EF651AD9BED8009566D3 /* LaunchScreen.xib */; };
 		A257EFB61ADA930D009566D3 /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A257EFB51ADA930D009566D3 /* Paths.swift */; };
-		A257EFB81ADA93EA009566D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A257EFB71ADA93EA009566D3 /* ViewController.swift */; };
 		A257EFBA1ADA948D009566D3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A257EFB91ADA948D009566D3 /* Extensions.swift */; };
 		A257EFBC1ADA98E8009566D3 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = A257EFBB1ADA98E8009566D3 /* Async.swift */; };
+		A288EC281ADC04C6003AF682 /* 321.png in Resources */ = {isa = PBXBuildFile; fileRef = A288EC271ADC04C6003AF682 /* 321.png */; };
+		A288EC2A1ADC057F003AF682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A288EC291ADC057F003AF682 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		A257EF631AD9BED8009566D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A257EF661AD9BED8009566D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A257EFB51ADA930D009566D3 /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
-		A257EFB71ADA93EA009566D3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A257EFB91ADA948D009566D3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A257EFBB1ADA98E8009566D3 /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
+		A288EC271ADC04C6003AF682 /* 321.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 321.png; sourceTree = "<group>"; };
+		A288EC291ADC057F003AF682 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,12 @@
 			children = (
 				A257EFB91ADA948D009566D3 /* Extensions.swift */,
 				A257EF5C1AD9BED8009566D3 /* AppDelegate.swift */,
+				A288EC291ADC057F003AF682 /* ViewController.swift */,
 				A257EF5E1AD9BED8009566D3 /* PinchOutView.swift */,
-				A257EFB71ADA93EA009566D3 /* ViewController.swift */,
 				A257EF601AD9BED8009566D3 /* Main.storyboard */,
 				A257EFBB1ADA98E8009566D3 /* Async.swift */,
 				A257EFB51ADA930D009566D3 /* Paths.swift */,
+				A288EC271ADC04C6003AF682 /* 321.png */,
 				A257EF631AD9BED8009566D3 /* Images.xcassets */,
 				A257EF651AD9BED8009566D3 /* LaunchScreen.xib */,
 				A257EF5A1AD9BED8009566D3 /* Supporting Files */,
@@ -141,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A288EC281ADC04C6003AF682 /* 321.png in Resources */,
 				A257EF621AD9BED8009566D3 /* Main.storyboard in Resources */,
 				A257EF671AD9BED8009566D3 /* LaunchScreen.xib in Resources */,
 				A257EF641AD9BED8009566D3 /* Images.xcassets in Resources */,
@@ -154,9 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A288EC2A1ADC057F003AF682 /* ViewController.swift in Sources */,
 				A257EFBA1ADA948D009566D3 /* Extensions.swift in Sources */,
 				A257EFB61ADA930D009566D3 /* Paths.swift in Sources */,
-				A257EFB81ADA93EA009566D3 /* ViewController.swift in Sources */,
 				A257EF5F1AD9BED8009566D3 /* PinchOutView.swift in Sources */,
 				A257EFBC1ADA98E8009566D3 /* Async.swift in Sources */,
 				A257EF5D1AD9BED8009566D3 /* AppDelegate.swift in Sources */,
@@ -305,6 +309,7 @@
 				A257EF781AD9BED8009566D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,5 +1,6 @@
 
 import UIKit
+import AudioToolbox
 
 class ViewController: UIViewController, UIScrollViewDelegate {
     
@@ -14,6 +15,10 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         var pan2 = UIPanGestureRecognizer(target:self,action:"panLower:")
         view.addGestureRecognizer(pan2)
+        
+        Async.main(after: 10) {
+            self.playSound()
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -56,6 +61,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             let v = view as! PinchOutView
             v.moveUpperCircle()
         }
+    }
+    
+    private func playSound() {
+        var soundIdRing:SystemSoundID = 0
+        let soundUrl = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("new-mail", ofType:"caf")!)
+        AudioServicesCreateSystemSoundID(soundUrl, &soundIdRing)
+        AudioServicesPlaySystemSound(soundIdRing)
     }
 }
 

@@ -41,9 +41,18 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         println("panUpper: p.x = \(p.x), p.y = \(p.y), height = \(height), width = \(width)")
         
-        if p.y < (height/2) {
+        switch(gr.state) {
+        case .Began:
             let v = view as! PinchOutView
-            v.moveUpperCircle()
+            v.didStartUpperPan(p)
+        case .Changed:
+            let v = view as! PinchOutView
+            v.didMoveUpperPan(p)
+        case .Ended:
+            let v = view as! PinchOutView
+            v.didEndUpperPan()
+        default:
+            break
         }
     }
     
@@ -59,13 +68,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         if p.y > (height/2) {
             let v = view as! PinchOutView
-            v.moveUpperCircle()
+            //v.moveUpperCircle()
         }
     }
     
     private func playSound() {
         var soundIdRing:SystemSoundID = 0
-        let soundUrl = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("new-mail", ofType:"caf")!)
+        let soundUrl = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("fanfare", ofType:"wav")!)
         AudioServicesCreateSystemSoundID(soundUrl, &soundIdRing)
         AudioServicesPlaySystemSound(soundIdRing)
     }

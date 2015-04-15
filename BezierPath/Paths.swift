@@ -95,4 +95,23 @@ struct Paths {
         return circle.CGPath
     }
     
+    static func upperHalfCircle(radius:CGFloat) -> CGPath {
+        let width = UIScreen.mainScreen().bounds.size.width
+        let height = UIScreen.mainScreen().bounds.size.height
+        
+        var circle = UIBezierPath(arcCenter: CGPoint(x:ceil(width/2), y:ceil(height/2)),
+            radius: radius,  startAngle: 220, endAngle: 320, clockwise: true)
+        
+        return circle.CGPath
+    }
+    
+    static func lowerHalfCircle(radius:CGFloat) -> CGPath {
+        let width = UIScreen.mainScreen().bounds.size.width
+        let height = UIScreen.mainScreen().bounds.size.height
+        
+        var circle = UIBezierPath(arcCenter: CGPoint(x:ceil(width/2), y:ceil(height/2)),
+            radius: radius,  startAngle: 40, endAngle: 140, clockwise: true)
+        
+        return circle.CGPath
+    }
 }
